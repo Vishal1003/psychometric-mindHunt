@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+            <link href="{% static 'css/plugins.css' %}" rel="stylesheet">
+            <link href="{% static 'css/style.css' %}" rel="stylesheet">
+            <link href="{% static 'css/responsive.css % }" rel="stylesheet">
+
+
+        <title>Questionnaire</title>
+        
+    </head>
+    <body class="container-fluid" style="margin-left: 10%;background: #7266BA; color: #000000">
+        <form method="POST">
+                {% csrf_token %}
+                {{form.as_p}}
+                <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        
+    </body>
+</html>
