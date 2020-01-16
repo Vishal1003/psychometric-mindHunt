@@ -1,11 +1,201 @@
 {% load static %}
-{% block content %}
-<body style="background: #7266BA; color: #000000">
-<link href="{% static 'css/plugins.css' %}" rel="stylesheet">
-<link href="{% static 'css/style.css' %}" rel="stylesheet">
-<link href="{% static 'css/responsive.css % }" rel="stylesheet">
-    
-    <h1 style="text-align: center">{{result}}</h1>
-    
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="INSPIRO" />
+    <meta name="description" content="Themeforest Template Polo">
+
+    <title>mindHunt 2.0</title>
+    <link href="{% static 'css/plugins.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/responsive.css % }" rel="stylesheet">
+
+<link href="{% static 'css/color-variations/purple.css' %}" rel="stylesheet" type="text/css" media="screen">
+    <style>
+        .nav-item:hover {
+            background-color: rgba(0, 0, 0, 0.829);
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="body-inner">
+
+        <!-- Header (Nav-Bar) -->
+        <nav style="background-color: #343a40; padding:20px; margin-bottom:0 !important;"
+            class="mb-4 navbar navbar-expand-lg navbar-dark unique-color-light bg-dark">
+            <a style="font-size: xx-large;" class="navbar-brand" href="#"><span>mind</span><span
+                    style="color: orange;">Hunt</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+                aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item" style="padding-right: 10px;">
+                        <a class="nav-link active" href="#"><i class="fa fa-check-circle"></i> Test</a>
+                    </li>
+                    <li class="nav-item" style="padding-right: 10px;">
+                        <a class="nav-link active" href="#"><i class="fa fa-info-circle"></i> About</a>
+                    </li>
+                    <li class="nav-item" style="padding-right: 10px;">
+                        <a class="nav-link active" href="#"><i class="fa fa-phone"></i> Contact</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><i class="fa fa-heart"></i> Follow <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="fa fa-thumbs-up"></i> Collaboration</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <section>
+            <div style="text-align: center; padding:50px ;">
+                <h3>
+                    Psychometric Test 01
+                </h3>
+                <h5 style="font-size: 18px;">
+                    Result:
+                </h5>
+            </div>
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="clearfix hidden-sm-down hidden-lg-up"></div>
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div class="card shadow p-3 mb-5 bg-white rounded" style="text-align: center; padding:20px;">
+                            <div class="card-block">
+                                <h4 class="card-title" style="color: black; font-weight: 50000; font-size: 25px; ">
+                                    Dashboard:</h4>
+                                <p class="card-text" style="color: black;font-size: 18px;  ">Name: {{name}}
+                                </p>
+                                <p class="card-text" style="color: black;font-size: 18px;  ">Contact: {{number}}
+                                </p>
+                                <p class="card-text" style="color: black;font-size: 18px;  ">Age: {{age}}
+                                </p>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div class="card shadow p-3 mb-5 bg-white rounded" style="text-align: center; padding:20px;  ">
+                            <div class="card-block">
+                                <h4 class="card-title" style="color: black; font-weight: 50000; font-size: 25px; ">
+                                    RESULT: </h4>
+                                <p class="card-text" style="color: black;font-size: 18px;  ">{{result}}
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h2 class="m-b-10">Get in Touch with Us</h2>
+
+                            </div>
+                            <div class="col-lg-6 m-b-30">
+                                <address>
+                                    <strong>Headquarters:</strong><br>
+                                    Netaji Subhas University of Technology<br>
+                                    Dwarka Sector 3, Delhi<br>
+                                </address>
+                                <strong>Phone:</strong> (+91) 8587093204
+                                <br>
+                                <strong>Email:</strong> mindhunt.care@gmail.com
+                            </div>
+                            <div class="col-lg-6 m-b-30">
+                                <address>
+                                    <strong>Headquarters:</strong><br>
+                                    Indira Gandhi Delhi Technical University for Women<br>
+                                    St. Kashmeere Gate, Delhi<br>
+                                </address>
+                                <strong>Phone:</strong> (+1) 1234 56789
+                                <br>
+                                <strong>Email:</strong> info@inspiro-media.com
+                            </div>
+                            <div class="col-lg-12 m-b-30">
+                                <h4>We are social</h4>
+                                <div class="social-icons social-icons-light social-icons-colored-hover">
+                                    <ul>
+                                        <li class="social-facebook"><a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        </li>
+                                        <li class="social-twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li class="social-youtube"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                        <li class="social-instagram"><a href="#"><i class="fab fa-instagram"></i></a>
+                                        </li>
+                                        <li class="social-gplus"><a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                        </li>
+                                        <li class="social-linkedin"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-1">
+                        <form class="widget-contact-form"
+                            action="http://www.inspirothemes.com/polo/include/contact-form.php" role="form"
+                            method="post">
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="name">Name</label>
+                                    <input type="text" aria-required="true" name="widget-contact-form-name"
+                                        class="form-control required name" placeholder="Enter your Name">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="email">Email</label>
+                                    <input type="email" aria-required="true" name="widget-contact-form-email"
+                                        class="form-control required email" placeholder="Enter your Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea type="text" name="widget-contact-form-message" rows="8"
+                                    class="form-control required" placeholder="Enter your Message"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-light" type="submit" id="form-submit"><i
+                                        class="fa fa-paper-plane"></i>&nbsp;Send message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <a id="scrollTop"><i class="icon-chevron-up1"></i><i class="icon-chevron-up1"></i></a>
+
+        <script src="{% static 'js/jquery.js' %}"></script>
+        <script src="{% static 'js/plugins.js' %}"></script>
+
+        <script src="{% static 'js/functions.js' %}"></script>
+
+        <script src="{% static 'js/plugins/components/particles.js' %}"></script>
+        <script src="{% static 'js/plugins/components/particles-animation.js' %}"></script>
+
+    </div>
 </body>
-{% endblock content %}
+
+</html>

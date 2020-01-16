@@ -40,30 +40,33 @@ def decision(num):
 def test(request):
 
     if request.method == 'POST':
-        form = TestForm(request.POST)
-        if form.is_valid():
-            Q1 = form.cleaned_data['Q1']
-            Q2 = form.cleaned_data['Q2']
-            Q3 = form.cleaned_data['Q3']
-            Q4 = form.cleaned_data['Q4']
-            Q5 = form.cleaned_data['Q5']
-            Q6 = form.cleaned_data['Q6']
-            Q7 = form.cleaned_data['Q7']
-            Q8 = form.cleaned_data['Q8']
-            Q9 = form.cleaned_data['Q9']
-            Q10 = form.cleaned_data['Q10']
+       
+        fname = request.POST['fname']
+        number = int(request.POST['number'])
+        age = int(request.POST['age'])
+        Q1 = int(request.POST['Q1'])
+        Q2 = int(request.POST['Q2'])
+        Q3 =int(request.POST['Q3'])
+        Q4 = int(request.POST['Q4'])
+        Q5 = int(request.POST['Q5'])
+        Q6 = int(request.POST['Q6'])
+        Q7 = int(request.POST['Q7'])
+        Q8 = int(request.POST['Q8'])
+        Q9 = int(request.POST['Q9'])
+        Q10 = int(request.POST['Q10'])
 
-            tlist= (int(Q1),int(Q2),int(Q3),int(Q4),int(Q5),int(Q6),int(Q7),int(Q8),int(Q9),int(Q10))
-            error =[]
-            for cet in centroids:
-                error.append(sum(np.square(np.subtract(cet,tlist)))) 
-            result=error.index(min(error))
-            print(result)
-        return render(request,'basic/thankyou.html',{'result': decision(result)})
+        tlist= (int(Q1),int(Q2),int(Q3),int(Q4),int(Q5),int(Q6),int(Q7),int(Q8),int(Q9),int(Q10))
+        error =[]
+        for cet in centroids:
+            error.append(sum(np.square(np.subtract(cet,tlist)))) 
+        result=error.index(min(error))
+        print(result)
+        return render(request,'basic/thankyou.html',{'result': decision(result),'name':fname, 'number':number, 'age': age})
     
 
 
 
     form = TestForm()
-    return render(request,'basic/form.html',{'form':form})
+    return render(request,'basic/form2.html',{'form':form})
 
+# on changing the form2 to form we will get original.

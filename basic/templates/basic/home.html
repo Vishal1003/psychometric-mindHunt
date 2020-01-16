@@ -3,389 +3,356 @@
 <html lang="en">
 
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="author" content="INSPIRO" />
-<meta name="description" content="Themeforest Template Polo">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="INSPIRO" />
+    <meta name="description" content="Themeforest Template Polo">
 
-<title>MIND HUNT</title>
-<link href="{% static 'css/plugins.css' %}" rel="stylesheet">
-<link href="{% static 'css/style.css' %}" rel="stylesheet">
-<link href="{% static 'css/responsive.css % }" rel="stylesheet">
+    <title>mindHunt 2.0</title>
+    <link href="{% static 'css/plugins.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/responsive.css % }" rel="stylesheet">
 
 <link href="{% static 'css/color-variations/purple.css' %}" rel="stylesheet" type="text/css" media="screen">
+    <style>
+        .nav-item:hover {
+            background-color: rgba(0, 0, 0, 0.829);
+        }
+    </style>
 </head>
+
 <body>
- <div class="body-inner">
+    <div class="body-inner">
+
+        <!-- Header (Nav-Bar) -->
+        <nav style="background-color: #343a40; padding:20px; margin-bottom:0 !important;"
+            class="mb-4 navbar navbar-expand-lg navbar-dark unique-color-light bg-dark">
+            <a style="font-size: xx-large;" class="navbar-brand" href="#"><span>mind</span><span
+                    style="color: orange;">Hunt</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+                aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item" style="padding-right: 10px;">
+                        <a class="nav-link active" href="#"><i class="fa fa-check-circle"></i> Test</a>
+                    </li>
+                    <li class="nav-item" style="padding-right: 10px;">
+                        <a class="nav-link active" href="#"><i class="fa fa-info-circle"></i> About</a>
+                    </li>
+                    <li class="nav-item" style="padding-right: 10px;">
+                        <a class="nav-link active" href="#"><i class="fa fa-phone"></i> Contact</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><i class="fa fa-heart"></i> Follow <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="fa fa-thumbs-up"></i> Collaboration</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <section style="background-color: lightgoldenrodyellow;">
+            <div style="text-align: center; padding:50px ;">
+                <h3>
+                    Our Complete Guide to Psychometric Tests
+                </h3>
+                <h5 style="font-size: 18px;">
+                    Including expert advice on what psychometric tests are to how you should best prepare for them.
+                </h5>
+            </div>
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="clearfix hidden-sm-down hidden-lg-up"></div>
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div class="card shadow p-3 mb-5 bg-white rounded" style="text-align: center; padding:20px;  ">
+                            <div class="card-block">
+                                <h4 class="card-title" style="color: black; font-weight: 50000; font-size: 25px; ">For
+                                    Practice</h4>
+                                <p class="card-text" style="color: black;font-size: 18px;  ">Practice psychometric tests
+                                </p>
+                                <button class="btn btn-primary" style="padding-right: 20px; padding-left: 20px"><a
+                                        href="http://127.0.0.1:8000/form/"
+                                        style="text-decoration: none; color: white;">Take
+                                        Test</a></button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div class="card shadow p-3 mb-5 bg-white rounded" style="text-align: center; padding:20px;">
+                            <div class="card-block">
+                                <h4 class="card-title" style="color: black; font-weight: 50000; font-size: 25px; ">For
+                                    Business</h4>
+                                <p class="card-text" style="color: black;font-size: 18px;  ">Psychometric test software
+                                </p>
+                                <button class="btn btn-primary">Free Trial</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="background-grey ">
+            <div class="container xs-text-center sm-text-center">
+                <div class="row">
+                    <div class="col-lg-9 ">
+                        <h2> <i class="fa fa-check-circle" aria-hidden="true"></i> Psychometric Tests</h2>
+                        <hr>
+                        <p class="lead">A psychometric test, also known as an Apitude Test, is a common part of many
+                            modern-day interviews and assessments. Psychometric tests take many forms and are an
+                            umbrella term for any assessment that tests one's cognitive ability or personality. They are
+                            now more commonly admistered online and will consist of a series of questions whereby you
+                            must submit your answers within the time limits.
+
+                            If you haven't yet encountered a psychometric test then you will very likely do so in the
+                            future as they are becoming increasingly utilised as an early stage of an assessment
+                            application. Recruiting companies like to use them as a means of filtering out large
+                            applicant pools to a much slimmer, manageable pool. As a result, many applicants may
+                            struggle to ever get past this stage.
+
+                            <p class="lead" ><b>This is where we come in - it's our mission to help applicants understand the
+                                difficulties
+                                and nuances involved in psychometric tests and to ultimately assist you in becoming
+                                victorious in whatever tests you may be challenged with.</b>
+                            </p>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="background-grey ">
+            <div class="container xs-text-center sm-text-center">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <h2> <i class="fa fa-question-circle" aria-hidden="true"></i> Why are psychometric tests used in
+                            recruitment?</h2>
+                        <hr>
+                        <p class="lead">Traditionally recruiters studied your CV and qualifications, and made a decision
+                            based on an interview.
+
+                            Extensive research has shown that actually this is a fairly poor way to pick which
+                            candidates are going to be best for the job. What's a better way? You guessed it: a
+                            psychometric test. In fact, many employers use a combination of interviews, assessments and
+                            psychometric tests.
+
+                            The power of psychometric testing is that there is a strong correlation between test scores
+                            and job performance, i.e. if you score higly in a psychometric test, the chances are that
+                            you are going to perform well in the job. As an employer, their predictive qualities make
+                            psychometric tests very attractive. Add the fact that they can be administered quickly and
+                            efficiently on a large scale and you can see why psychometric tests have become the norm,
+                            especially for graduate recruitment.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="background-grey ">
+            <div class="container xs-text-center sm-text-center">
+                <div class="row">
+                    <div class="col-lg-9 ">
+                        <h2> <i class="fa fa-tasks" aria-hidden="true"></i> Hire the Right Person!</h2>
+                        <hr>
+                        <p class="lead"><b>Hire the right candidate in your company! Use our psychometric test application
+                            to help you find who
+                            is right for the job! Give it a try!!</b>
+                        </p>
+                        <button class="btn btn-primary"><a href="http://127.0.0.1:8000/form/">
+                                <h2 style="color: white;">Take Test</h2>
+                            </a></button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+<hr>
+        <section>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3">
+                        <h4>About Us</h4>
+                        <hr size="2" color='black'>
+                        <p>Mind Hunt is social web application which helps the recruiters to decide the right candidate
+                            for their company!
+                        </p>
+                    </div>
 
 
-
-<section class="fullscreen background-colored">
-<div class="container">
-<div class="container-fullscreen">
-<div class="text-middle text-center text-light">
-
-<h1 data-animate="fadeIn">MIND HUNT!</h1>
-<p style="font-size: 22px">Hire the Right!</p>
-</div>
-</div>
-</div>
-
-<div id="particles-js" class="particles"></div>
-</section>
+                    <div class="col-lg-3">
+                        <h4>Tons of Options</h4>
+                        <hr size="2" color='black'>
+                        <p>With the help of modern technologies we are building certain techniques which tests the IQ
+                            level of the candidate.
+                            One of our best technique is by taking psychometric tests which is totally unbiased.
+                    </div>
 
 
-<section class="background-grey p-t-120 p-b-40">
-<div class="container xs-text-center sm-text-center">
-<div class="row">
-<div class="col-lg-9 p-b-40">
-<h2>Hire the Right Person!</h2>
-<p class="lead">Hire the right candidate in your company! Use our psychometric test application to help you find who 
-    is right for the perticular job! Give it a try!! 
-</p>
-<button class="btn btn-primary"><a href="http://127.0.0.1:8000/form/"><h2>Take Test</h2></a></button>
-</div>
-<div class="col-lg-3">
-<div class="text-center">
-<div class="counter text-lg"> <span data-speed="3000" data-refresh-interval="12" data-to="114" data-from="50" data-seperator="true"></span> </div>
-<div class="seperator seperator-small"></div>
- <p>FINISHED PROJECTS</p>
-</div>
-</div>
-</div>
-</div>
-</section>
+                    <div class="col-lg-3">
+                        <h4>Reliable</h4>
+                        <hr size="2" color='black'>
+                        <p>
+                            This applicationis totally reliable as it works on AI. This has proven to be a boon in the
+                            placement season
+                            where due to a lack of time and management recruiters find it hard to take certain important
+                            tests.
+                        </p>
+                    </div>
 
 
-<section style="background-color: gainsboro">
-<div class="container">
-<div class="row">
+                    <div class="col-lg-3">
+                        <h4>How do we Help?</h4>
+                        <hr size="2" color='black'>
+                        <p>
+                            We have used ML algorithm which helps to group the candidates on the basis of their
+                            responses in the tests.
+                            This is totally unbiased and reduces the time of evaluation and gives accurate results!
+                        </p>
+                    </div>
 
-<div class="col-lg-3">
-<h4>About Us</h4>
-<p>Mind Hunt is social web application which helps the recruiters to decide the right candidate for their company!
-</p>
-</div>
+                </div>
+            </div>
+        </section>
+<hr>
+        <section style="background-color:lightyellow;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-12">
+                        <h2>What people say about us</h2>
+                        <p class="lead">"Best site for the recruiters."</p>
+                    </div>
+                    <div class="col-lg-6 offset-1">
+                        <div class="carousel arrows-visibile testimonial testimonial-single" data-items="1"
+                            data-loop="true" data-autoplay="true" data-autoplay-timeout="3500" data-arrows="false"
+                            data-animate-in="fadeIn" data-animate-out="fadeOut">
+
+                            <div class="testimonial-item">
+
+                                <p>Mind Hunt is by far the most amazing helping hand out there! I literally could not be
+                                    happier that I chose to use this application!</p>
+                                <span>Vishal Jha</span>
+                                <span>CEO, Student Software</span>
+                            </div>
 
 
-<div class="col-lg-3">
-<h4>Tons of Options</h4>
-<p>With the help of modern technologies we are building certain techniques which tests the IQ level of the candidate.
-        One of our best technique is by taking psychometric tests which is totally unbiased. 
+                            <div class="testimonial-item">
+
+                                <p>The world is a dangerous place to live; not because of the people who are evil, but
+                                    because of the people who don't do anything about it.</p>
+                                <span>Simranjeet Singh</span>
+                                <span>CEO, Square Software</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+       
+
+        <!-- Footer (Contact-Section) -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h2 class="m-b-10">Get in Touch with Us</h2>
+
+                            </div>
+                            <div class="col-lg-6 m-b-30">
+                                <address>
+                                    <strong>Headquarters:</strong><br>
+                                    Netaji Subhas University of Technology<br>
+                                    Dwarka Sector 3, Delhi<br>
+                                </address>
+                                <strong>Phone:</strong> (+91) 8587093204
+                                <br>
+                                <strong>Email:</strong> mindhunt.care@gmail.com
+                            </div>
+                            <div class="col-lg-6 m-b-30">
+                                <address>
+                                    <strong>Headquarters:</strong><br>
+                                    Indira Gandhi Delhi Technical University for Women<br>
+                                    St. Kashmeere Gate, Delhi<br>
+                                </address>
+                                <strong>Phone:</strong> (+1) 1234 56789
+                                <br>
+                                <strong>Email:</strong> info@inspiro-media.com
+                            </div>
+                            <div class="col-lg-12 m-b-30">
+                                <h4>We are social</h4>
+                                <div class="social-icons social-icons-light social-icons-colored-hover">
+                                    <ul>
+                                        <li class="social-facebook"><a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        </li>
+                                        <li class="social-twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li class="social-youtube"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                        <li class="social-instagram"><a href="#"><i class="fab fa-instagram"></i></a>
+                                        </li>
+                                        <li class="social-gplus"><a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                        </li>
+                                        <li class="social-linkedin"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-1">
+                        <form class="widget-contact-form"
+                            action="http://www.inspirothemes.com/polo/include/contact-form.php" role="form"
+                            method="post">
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="name">Name</label>
+                                    <input type="text" aria-required="true" name="widget-contact-form-name"
+                                        class="form-control required name" placeholder="Enter your Name">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="email">Email</label>
+                                    <input type="email" aria-required="true" name="widget-contact-form-email"
+                                        class="form-control required email" placeholder="Enter your Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea type="text" name="widget-contact-form-message" rows="8"
+                                    class="form-control required" placeholder="Enter your Message"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-light" type="submit" id="form-submit"><i
+                                        class="fa fa-paper-plane"></i>&nbsp;Send message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <a id="scrollTop"><i class="icon-chevron-up1"></i><i class="icon-chevron-up1"></i></a>
+
+        <script src="{% static 'js/jquery.js' %}"></script>
+        <script src="{% static 'js/plugins.js' %}"></script>
+
+        <script src="{% static 'js/functions.js' %}"></script>
+
+        <script src="{% static 'js/plugins/components/particles.js' %}"></script>
+        <script src="{% static 'js/plugins/components/particles-animation.js' %}"></script>
+
     </div>
-
-
-<div class="col-lg-3">
-<h4>Reliable</h4>
-<p>
-    This applicationis totally reliable as it works on AI. This has proven to be a boon in the placement season 
-    where due to a lack of time and management recruiters find it hard to take certain important tests.
-</p>
-</div>
-
-
-<div class="col-lg-3">
-<h4>How do we Help?</h4>
-<p>
-    We have used ML algorithm which helps to group the candidates on the basis of their responses in the tests.
-    This is totally unbiased and reduces the time of evaluation and gives accurate results!
-</p>
-</div>
-
-</div>
-</div>
-</section>
-
-
-<section>
-<div class="container">
-<div class="row">
-<div class="col-lg-5 col-md-12">
-<h2>What people say about us</h2>
-<p class="lead">"Best site for the recruiters."</p>
-</div>
-<div class="col-lg-6 offset-1">
-<div class="carousel arrows-visibile testimonial testimonial-single" data-items="1" data-loop="true" data-autoplay="true" data-autoplay-timeout="3500" data-arrows="false" data-animate-in="fadeIn" data-animate-out="fadeOut">
-
-<div class="testimonial-item">
-
-<p>Mind Hunt is by far the most amazing helping hand out there! I literally could not be happier that I chose to use this application!</p>
-<span>Vishal Jha</span>
-<span>CEO, Student Software</span>
-</div>
-
-
-<div class="testimonial-item">
-
-<p>The world is a dangerous place to live; not because of the people who are evil, but because of the people who don't do anything about it.</p>
-<span>Simranjeet Singh</span>
-<span>CEO, Square Software</span>
-</div>
-
-</div>
-</div>
-
-</div>
-</div>
-</section>
-
-
-<section>
-<div class="container">
-<div class="col-lg-12 col-md-12 m-b-40 text-center">
-<h2>Services</h2>
-<p class="lead">Lorem ipsum dolor sit amet, consecte adipiscing elit. Suspendisse condimentum porttitor cursumus.</p>
-</div>
-<div class="row">
-<div class="col-lg-4" data-animate="fadeInUp" data-animate-delay="0">
-<div class="icon-box effect medium border small">
-<div class="icon">
-<a href="#"><i class="fa fa-plug"></i></a>
-</div>
-<h3>Powerful template</h3>
-<p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Suspendisse condimentum porttitor cursumus.</p>
-</div>
-</div>
-<div class="col-lg-4" data-animate="fadeInUp" data-animate-delay="200">
-<div class="icon-box effect medium border small">
-<div class="icon">
-<a href="#"><i class="fa fa-desktop"></i></a>
-</div>
-<h3>Flexible Layouts</h3>
-<p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Suspendisse condimentum porttitor cursumus.</p>
-</div>
-</div>
-<div class="col-lg-4" data-animate="fadeInUp" data-animate-delay="400">
-<div class="icon-box effect medium border small">
-<div class="icon">
-<a href="#"><i class="fa fa-cloud"></i></a>
-</div>
-<h3>Retina Ready</h3>
-<p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Suspendisse condimentum porttitor cursumus.</p>
-</div>
-</div>
-<div class="col-lg-4" data-animate="fadeInUp" data-animate-delay="600">
-<div class="icon-box effect medium border small">
-<div class="icon">
-<a href="#"><i class="far fa-lightbulb"></i></a>
-</div>
-<h3>Fast processing</h3>
-<p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Suspendisse condimentum porttitor cursumus.</p>
-</div>
-</div>
-<div class="col-lg-4" data-animate="fadeInUp" data-animate-delay="800">
-<div class="icon-box effect medium border small">
-<div class="icon">
-<a href="#"><i class="fa fa-trophy"></i></a>
-</div>
-<h3>Unlimited Colors</h3>
-<p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Suspendisse condimentum porttitor cursumus.</p>
-</div>
-</div>
-<div class="col-lg-4" data-animate="fadeInUp" data-animate-delay="1000">
-<div class="icon-box effect medium border small">
-<div class="icon">
-<a href="#"><i class="fa fa-thumbs-up"></i></a>
-</div>
-<h3>Premium Sliders</h3>
-<p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Suspendisse condimentum porttitor cursumus.</p>
-</div>
-</div>
-<div class="col-lg-4" data-animate="fadeInUp" data-animate-delay="1200">
-<div class="icon-box effect medium border small">
-<div class="icon">
-<a href="#"><i class="fa fa-rocket"></i></a>
-</div>
-<h3>Modern Design</h3>
-<p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Suspendisse condimentum porttitor cursumus.</p>
-</div>
-</div>
-<div class="col-lg-4" data-animate="fadeInUp" data-animate-delay="1400">
-<div class="icon-box effect medium border small">
-<div class="icon">
-<a href="#"><i class="fa fa-flask"></i></a>
-</div>
-<h3>Clean Modern Code</h3>
-<p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Suspendisse condimentum porttitor cursumus.</p>
-</div>
-</div>
-<div class="col-lg-4" data-animate="fadeInUp" data-animate-delay="1600">
-<div class="icon-box effect medium border small">
-<div class="icon">
-<a href="#"><i class="fa fa-umbrella"></i></a>
-</div>
-<h3>Free Updates & Support</h3>
-<p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Suspendisse condimentum porttitor cursumus.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-
-<section class="p-t-150 p-b-200" style="background-image:url(homepages/branding/images/background-4.png); background-position:71% 22%;">
-<div class="container">
-<div class="row">
-<div class="col-lg-6">
-<div class="row">
-<div class="col-lg-12">
-<h2 class="m-b-10">Get in Touch with Us</h2>
-<p class="lead">Our Headquarters are in Australia, USA, Europe, Asia, Africa </p>
-</div>
-<div class="col-lg-6 m-b-30">
-<address>
-<strong>Headquarters:</strong><br>
-795 Folsom Ave, Suite 600<br>
-San Francisco, CA 94107<br>
-</address>
-<strong>Phone:</strong> (+1) 1234 56789
-<br>
-<strong>Fax:</strong> (+1) 12 3456 78910
-<br>
-<strong>Email:</strong> info@inspiro-media.com
-</div>
-<div class="col-lg-6 m-b-30">
-<address>
-<strong>Headquarters:</strong><br>
-795 Folsom Ave, Suite 600<br>
-San Francisco, CA 94107<br>
-</address>
-<strong>Phone:</strong> (+1) 1234 56789
-<br>
-<strong>Fax:</strong> (+1) 12 3456 78910
-<br>
-<strong>Email:</strong> info@inspiro-media.com
-</div>
-<div class="col-lg-12 m-b-30">
-<h4>We are social</h4>
-<div class="social-icons social-icons-light social-icons-colored-hover">
-<ul>
-<li class="social-rss"><a href="#"><i class="fa fa-rss"></i></a></li>
-<li class="social-facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-<li class="social-twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
-<li class="social-vimeo"><a href="#"><i class="fab fa-vimeo"></i></a></li>
-<li class="social-youtube"><a href="#"><i class="fab fa-youtube"></i></a></li>
-<li class="social-instagram"><a href="#"><i class="fab fa-instagram"></i></a></li>
-<li class="social-pinterest"><a href="#"><i class="fab fa-pinterest"></i></a></li>
-<li class="social-gplus"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-<li class="social-dribbble"><a href="#"><i class="fab fa-dribbble"></i></a></li>
-<li class="social-skype"><a href="#"><i class="fab fa-skype"></i></a></li>
-<li class="social-linkedin"><a href="#"><i class="fab fa-linkedin"></i></a></li>
-<li class="social-behance"><a href="#"><i class="fab fa-behance"></i></a></li>
-<li class="social-flickr"><a href="#"><i class="fab fa-flickr"></i></a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-5 offset-1">
-<form class="widget-contact-form" action="http://www.inspirothemes.com/polo/include/contact-form.php" role="form" method="post">
-<div class="row">
-<div class="form-group col-md-6">
-<label for="name">Name</label>
-<input type="text" aria-required="true" name="widget-contact-form-name" class="form-control required name" placeholder="Enter your Name">
-</div>
-<div class="form-group col-md-6">
-<label for="email">Email</label>
-<input type="email" aria-required="true" name="widget-contact-form-email" class="form-control required email" placeholder="Enter your Email">
-</div>
-</div>
-<div class="form-group">
-<label for="message">Message</label>
-<textarea type="text" name="widget-contact-form-message" rows="8" class="form-control required" placeholder="Enter your Message"></textarea>
-</div>
-<div class="form-group">
-<button class="btn btn-light" type="submit" id="form-submit"><i class="fa fa-paper-plane"></i>&nbsp;Send message</button>
-</div>
-</form>
-</div>
-</div>
-</div>
-</section>
-
-
-<footer id="footer">
-<div class="footer-content">
-<div class="container">
-<div class="row">
-<div class="col-lg-5">
-<div class="widget">
-<div class="widget-title">Polo HTML5 Template</div>
-<p class="mb-5">Built with love in Fort Worth, Texas, USA<br>
-All rights reserved. Copyright © 2019. INSPIRO.</p>
-<a href="../../themeforest.net/item/polo-responsive-multipurpose-html5-template/13708923.html" class="btn btn-inverted">Purchase Now</a>
-</div>
-</div> <div class="col-lg-7">
-<div class="row">
-<div class="col-lg-3">
-<div class="widget">
-<div class="widget-title">Discover</div>
-<ul class="list">
-<li><a href="#">Features</a></li>
-<li><a href="#">Layouts</a></li>
-<li><a href="#">Corporate</a></li>
-<li><a href="#">Updates</a></li>
-<li><a href="#">Pricing</a></li>
-<li><a href="#">Customers</a></li>
-</ul>
-</div>
-</div>
-<div class="col-lg-3">
-<div class="widget">
-<div class="widget-title">Features</div>
-<ul class="list">
-<li><a href="#">Layouts</a></li>
-<li><a href="#">Headers</a></li>
-<li><a href="#">Widgets</a></li>
-<li><a href="#">Footers</a></li>
-</ul>
-</div>
- </div>
-<div class="col-lg-3">
-<div class="widget">
-<div class="widget-title">Pages</div>
-<ul class="list">
-<li><a href="#">Portfolio</a></li>
-<li><a href="#">Blog</a></li>
-<li><a href="#">Shop</a></li>
-</ul>
-</div>
-</div>
-<div class="col-lg-3">
-<div class="widget">
-<div class="widget-title">Support</div>
-<ul class="list">
-<li><a href="#">Help Desk</a></li>
-<li><a href="#">Documentation</a></li>
-<li><a href="#">Contact Us</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="copyright-content">
-<div class="container">
-<div class="copyright-text text-center">&copy; 2019 POLO - Responsive Multi-Purpose HTML5 Template. All Rights Reserved.<a href="../../www.inspiro-media.com/index.html" target="_blank"> INSPIRO</a> </div>
-</div>
-</div>
-</footer>
-
-</div>
-
-
-<a id="scrollTop"><i class="icon-chevron-up1"></i><i class="icon-chevron-up1"></i></a>
-
-<script src="{% static 'js/jquery.js' %}"></script>
-<script src="{% static 'js/plugins.js' %}"></script>
-
-<script src="{% static 'js/functions.js' %}"></script>
-
-<script src="{% static 'js/plugins/components/particles.js' %}"></script>
-<script src="{% static 'js/plugins/components/particles-animation.js' %}"></script>
 </body>
 
-<!-- Mirrored from www.inspirothemes.com/polo/home-creative-v6.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Oct 2019 06:09:27 GMT -->
 </html>

@@ -1,0 +1,881 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="INSPIRO" />
+    <meta name="description" content="Themeforest Template Polo">
+
+    <title>mindHunt 2.0</title>
+    <link href="{% static 'css/plugins.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/responsive.css % }" rel="stylesheet">
+
+<link href="{% static 'css/color-variations/purple.css' %}" rel="stylesheet" type="text/css" media="screen">
+    <style>
+        .nav-item:hover {
+            background-color: rgba(0, 0, 0, 0.829);
+        }
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,600,800,900');
+
+        body {
+            font-family: 'Work Sans', sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            background: #ebebeb;
+        }
+
+        .m-t-10 {
+            margin-top: 10px;
+        }
+
+        .m-t-20 {
+            margin-top: 20px;
+        }
+
+        .m-t-30 {
+            margin-top: 30px;
+        }
+
+        .m-t-40 {
+            margin-top: 40px;
+        }
+
+        .m-b-10 {
+            margin-bottom: 10px;
+        }
+
+        .m-b-20 {
+            margin-bottom: 20px;
+        }
+
+        .m-b-30 {
+            margin-bottom: 30px;
+        }
+
+        .m-b-40 {
+            margin-bottom: 40px;
+        }
+
+        .m-l-10 {
+            margin-left: 10px;
+        }
+
+        .m-l-20 {
+            margin-left: 20px;
+        }
+
+        .m-l-30 {
+            margin-left: 30px;
+        }
+
+        .m-l-40 {
+            margin-left: 40px;
+        }
+
+        /* .wd10 { width: 10%; float: left;} .wd20 { width: 20%; float: left;} .wd30 { width: 30%; float: left;}
+.wd40 { width: 40%; float: left;} .wd50 { width: 50%; float: left;} .wd60 { width: 60%; float: left;}
+.wd70 { width: 70%; float: left;} .wd80 { width: 80%; float: left;} .wd90 { width: 90%; float: left;} .wd100 { width: 100%; float: left;} */
+        .wd10 {
+            width: 10%;
+        }
+
+        .wd20 {
+            width: 20%;
+        }
+
+        .wd30 {
+            width: 30%;
+        }
+
+        .wd40 {
+            width: 40%;
+        }
+
+        .wd50 {
+            width: 50%;
+        }
+
+        .wd60 {
+            width: 60%;
+        }
+
+        .wd70 {
+            width: 70%;
+        }
+
+        .wd80 {
+            width: 80%;
+        }
+
+        .wd90 {
+            width: 90%;
+        }
+
+        .wd100 {
+            width: 100%;
+        }
+
+        .wd10,
+        .wd10,
+        .wd20,
+        .wd30,
+        .wd40,
+        .wd50,
+        .wd60,
+        .wd70,
+        .wd80,
+        .wd90,
+        .wd100 {
+            display: inline-block;
+        }
+
+        .col50 {
+            width: 49%;
+        }
+
+        .col50.colleft {
+            float: left;
+        }
+
+        .col50.colright {
+            float: right;
+        }
+
+        .col50 .wd50 {
+            width: 100%;
+            float: left;
+        }
+
+        .col50 .col50 {
+            width: 48%;
+        }
+
+        .fL {
+            float: left !important;
+        }
+
+        .fR {
+            float: right !important;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+
+        .op9 {
+            opacity: .9;
+        }
+
+        .op8 {
+            opacity: .8;
+        }
+
+        .op7 {
+            opacity: .7;
+        }
+
+        .op6 {
+            opacity: .6;
+        }
+
+        .op5 {
+            opacity: .5;
+        }
+
+        .op4 {
+            opacity: .4;
+        }
+
+        .op3 {
+            opacity: .3;
+        }
+
+        .op2 {
+            opacity: .2;
+        }
+
+        .op1 {
+            opacity: .1;
+        }
+
+        .nodrop {
+            cursor: no-drop;
+        }
+
+        /* color code */
+        .white {
+            color: #ffffff;
+        }
+
+        .bg-white {
+            background-color: #ffffff !important;
+            color: #676767 !important;
+        }
+
+        .blue {
+            color: #1ba1e5;
+        }
+
+        .bg-blue {
+            background-color: #1ba1e5 !important;
+        }
+
+        .purple {
+            color: #448aff;
+        }
+
+        .bg-purple {
+            background-color: #448aff !important;
+        }
+
+        .red {
+            color: #ff5252;
+        }
+
+        .bg-red {
+            background-color: #ff5252 !important;
+        }
+
+        .orange {
+            color: #ff6d00;
+        }
+
+        .bg-orange {
+            background-color: #ff6d00 !important;
+        }
+
+        .green {
+            color: #43a047;
+        }
+
+        .bg-green {
+            background-color: #43a047 !important;
+        }
+
+        .violet {
+            color: #9162e4;
+        }
+
+        .bg-violet {
+            background-color: #9162e4 !important;
+        }
+
+        .pink {
+            color: #ff6090;
+        }
+
+        .bg-pink {
+            background-color: #ff6090 !important;
+        }
+
+        .alt-blue {
+            color: #7c9cad;
+        }
+
+        .bg-alt-blue {
+            background-color: #7c9cad !important;
+        }
+
+        .bg-pink:hover,
+        .bg-pink:focus,
+        .bg-pink:active,
+        .bg-purple:hover,
+        .bg-purple:focus,
+        .bg-purple:active,
+        .bg-violet:hover,
+        .bg-violet:focus,
+        .bg-violet:active,
+        .bg-alt-blue:hover,
+        .bg-alt-blue:focus,
+        .bg-alt-blue:active {
+            color: #ffffff !important;
+        }
+
+        /* text color code */
+        .gray-pale {
+            color: #526273;
+        }
+
+        .gray-dark {
+            color: #444444;
+        }
+
+        .gray-light {
+            color: #908e8e;
+        }
+
+        .btn {
+            -webkit-transition: box-shadow ease-in-out .1s;
+            -moz-transition: box-shadow ease-in-out .1s;
+            -o-transition: box-shadow ease-in-out .1s;
+            transition: box-shadow ease-in-out .1s;
+            color: #ffffff;
+        }
+
+        .btn[class*='bg-']:hover {
+            box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn.active.focus,
+        .btn.active:focus,
+        .btn.focus,
+        .btn:active.focus,
+        .btn:active:focus,
+        .btn:focus,
+        button:focus {
+            outline: none;
+            outline-offset: 0;
+        }
+
+        .container {
+            max-width: 960px;
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+            display: block;
+        }
+
+        .contact {
+            background: #F9F9F9;
+            padding: 25px;
+            margin: 50px 0;
+        }
+
+        .contact h3 {
+            display: block;
+            font-size: 16px;
+        }
+
+        .contact p {
+            margin: 5px 0;
+        }
+
+        hr {
+            border-width: 7px;
+            box-shadow: none;
+            border-style: solid;
+            border-color: #f3f3f3;
+            margin: 7px 0;
+            margin-left: 0;
+            display: block;
+        }
+
+        fieldset {
+            border: medium none !important;
+            margin: 0 0 10px;
+            min-width: 100%;
+            padding: 0;
+            width: 100%;
+        }
+
+        textarea {
+            font-family: 'Work Sans', sans-serif;
+        }
+
+        .contact input[type="text"],
+        .contact input[type="email"],
+        .contact input[type="tel"],
+        .contact input[type="url"],
+        .contact select,
+        .contact textarea {
+            width: 100%;
+            border: 1px solid #CCC;
+            background: #FFF;
+            margin: 0 0 5px;
+            line-height: 24px;
+            padding: 0;
+            text-indent: 8px;
+        }
+
+        .contact select {
+            padding: 3px 7px;
+            text-indent: 0;
+        }
+
+        .contact input[type="text"]:hover,
+        .contact input[type="email"]:hover,
+        .contact input[type="tel"]:hover,
+        .contact input[type="url"]:hover,
+        .contact textarea:hover {
+            -webkit-transition: border-color 0.3s ease-in-out;
+            -moz-transition: border-color 0.3s ease-in-out;
+            transition: border-color 0.3s ease-in-out;
+            border-color: #373737;
+        }
+
+        .contact textarea {
+            max-height: 120px;
+            min-height: 60px;
+            min-width: 100%;
+            max-width: 100%;
+        }
+
+        .contact button[type="submit"] {
+            cursor: pointer;
+            width: 100%;
+            border: none;
+            background: #0CF;
+            color: #FFF;
+            margin: 0 0 5px;
+            padding: 10px;
+            font-size: 15px;
+        }
+
+        .contact button[type="submit"]:hover {
+            background: #09C;
+            -webkit-transition: background 0.3s ease-in-out;
+            -moz-transition: background 0.3s ease-in-out;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .contact button[type="submit"]:active {
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .contact input:focus,
+        .contact textarea:focus {
+            outline: 0;
+            border: 1px solid #999;
+        }
+
+        ::-webkit-input-placeholder {
+            color: #888;
+        }
+
+        :-moz-placeholder {
+            color: #888;
+        }
+
+        ::-moz-placeholder {
+            color: #888;
+        }
+
+        :-ms-input-placeholder {
+            color: #888;
+        }
+
+        .question-radio {
+            border: 5px solid #d7d7d7;
+            margin-bottom: 10px;
+            margin-left: -5px;
+        }
+
+        .question-radio .col50 {
+            padding: 1% 2%;
+            width: 46%;
+        }
+
+        .question-radio .col50 p {
+            margin: 8px 0 0;
+            font-weight: 600;
+        }
+
+        .question-radio .col50 label {
+            margin: 0 10px 0 0;
+            font-size: 13px;
+        }
+
+        .question-radio .col50 input[type="radio"] {
+            position: relative;
+            ;
+            top: 2px;
+        }
+
+        .table-wrapper {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            max-width: 1150px;
+        }
+
+        .table-wrapper:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 100%;
+            width: 50px;
+            height: 100%;
+            border-radius: 10px 0 0 10px / 50% 0 0 50%;
+        }
+
+        .table-wrapper .table-inner {
+            overflow-x: auto;
+            border: 1px solid #ebebeb;
+            padding: 0 7px;
+        }
+
+        .table-wrapper .table-inner::-webkit-scrollbar {
+            -webkit-appearance: none;
+            width: 14px;
+            height: 14px;
+        }
+
+        .table-wrapper .table-inner::-webkit-scrollbar-thumb {
+            border-radius: 5px;
+            border: 2px solid #fff;
+            background-color: #8e9eab;
+        }
+
+        .table-wrapper input[type="text"] {
+            line-height: 24px;
+            margin: 0;
+        }
+
+        .pricing-table {
+            margin: 10px 0;
+            text-align: center;
+            font-size: 12px;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        .pricing-table th,
+        .pricing-table td {
+            padding: 4px 2px;
+            min-width: 120px;
+            border: none;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .pricing-table th {
+            background: #8e9eab;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .pricing-table td:first-child {
+            padding: 5px;
+            text-align: left;
+        }
+
+        .pricing-table tr:nth-child(even) td {
+            background: white;
+        }
+
+        @media (min-width: 860px) {
+            .table-wrapper {
+                overflow: visible;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+            }
+
+            .table-wrapper:after {
+                content: none;
+            }
+        }
+
+        @media (max-width: 640px) {
+            label {
+                font-size: 12px;
+            }
+
+            .col50 .col50 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="body-inner">
+
+        <!-- Header (Nav-Bar) -->
+        <nav style="background-color: #343a40; padding:20px; margin-bottom:0 !important;"
+            class="mb-4 navbar navbar-expand-lg navbar-dark unique-color-light bg-dark">
+            <a style="font-size: xx-large;" class="navbar-brand" href="#"><span>mind</span><span
+                    style="color: orange;">Hunt</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+                aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item" style="padding-right: 10px;">
+                        <a class="nav-link active" href="#"><i class="fa fa-check-circle"></i> Test</a>
+                    </li>
+                    <li class="nav-item" style="padding-right: 10px;">
+                        <a class="nav-link active" href="#"><i class="fa fa-info-circle"></i> About</a>
+                    </li>
+                    <li class="nav-item" style="padding-right: 10px;">
+                        <a class="nav-link active" href="#"><i class="fa fa-phone"></i> Contact</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><i class="fa fa-heart"></i> Follow <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="fa fa-thumbs-up"></i> Collaboration</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <section>
+            <div style="text-align: center;">
+                <h3>
+                    Psychometric Test 01
+                </h3>
+                <h5 style="font-size: 18px;">
+                    20 Questions | 20 minutes
+                </h5>
+            </div>
+        </section>
+
+        <!-- Form -->
+
+        <div class="container">
+            <form class="contact" action="" method="post">
+                {% csrf_token %}
+                <h3>TEST 01</h3>
+
+                <div class="col50 colleft">
+                    <div class="col50 colleft">
+                        <div class="wd50">
+                            <label name="">NAME</label>
+                            <input name="fname" placeholder="Name" type="text" required autofocus>
+                        </div>
+                    </div>
+                    <div class="col50 colright">
+                        <div class="wd50">
+                            <label name="">Phone number</label>
+                            <input name="number" placeholder="Phone number" type="tel" required>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col50 colright">
+                    <div class="col50 colleft">
+                        <div class="wd50">
+                            <label name="">Age</label>
+                            <input name="age" placeholder="Age" type="text" required>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="wd100">
+                    <hr>
+                </div>
+
+
+
+                <div class="wd100">
+                    <label name=""><span style="color: brown;">All Questions are Mandatory.</span></label>
+                    <p><strong>SET 01</strong></p>
+                </div>
+
+                <div class="wd100 question-radio">
+                    <div class="col50 colleft">
+                        <p><span style="color: black;">1. </span>I put effort into work because it has personal
+                            significance to me.</p>
+                        <label><input type="radio" name="Q1" value="0"> Strongly Disagree</label>
+                        <label><input type="radio" name="Q1" value="1"> Disagree</label>
+                        <label><input type="radio" name="Q1" value="2"> Slightly Disagree</label>
+                        <label><input type="radio" name="Q1" value="3"> Neither Agree nor Disagree</label>
+                        <label><input type="radio" name="Q1" value="4"> Slightly Agree</label>
+                        <label><input type="radio" name="Q1" value="5"> Agree</label>
+                        <label><input type="radio" name="Q1" value="6"> Strongly Agree</label>
+
+                        <p><span style="color: black;">2. </span>I care about having a great reputation at work.</p>
+                        <label><input type="radio" name="Q2" value="0"> Strongly Disagree</label>
+                        <label><input type="radio" name="Q2" value="1"> Disagree</label>
+                        <label><input type="radio" name="Q2" value="2"> Slightly Disagree</label>
+                        <label><input type="radio" name="Q2" value="3"> Neither Agree nor Disagree</label>
+                        <label><input type="radio" name="Q2" value="4"> Slightly Agree</label>
+                        <label><input type="radio" name="Q2" value="5"> Agree</label>
+                        <label><input type="radio" name="Q2" value="6"> Strongly Agree</label>
+
+                        <p><span style="color: black;">3. </span>I care about having challenges that help me to develop
+                            new skills.</p>
+                        <label><input type="radio" name="Q3" value="0"> Strongly Disagree</label>
+                        <label><input type="radio" name="Q3" value="1"> Disagree</label>
+                        <label><input type="radio" value="2" name="Q3"> Slightly Disagree</label>
+                        <label><input type="radio" name="Q3" value="3"> Neither Agree nor Disagree</label>
+                        <label><input type="radio" name="Q3" value="4"> Slightly Agree</label>
+                        <label><input type="radio" name="Q3" value="5"> Agree</label>
+                        <label><input type="radio" name="Q3" value="6"> Strongly Agree</label>
+
+                        <p><span style="color: black;">4. </span>I like to complete tasks way in advance to feel
+                            comfortable.</p>
+                        <label><input type="radio" name="Q4" value="0"> Strongly Disagree</label>
+                        <label><input type="radio" name="Q4" value="1"> Disagree</label>
+                        <label><input type="radio" name="Q4" value="2"> Slightly Disagree</label>
+                        <label><input type="radio" name="Q4" value="3"> Neither Agree nor Disagree</label>
+                        <label><input type="radio" name="Q4" value="4"> Slightly Agree</label>
+                        <label><input type="radio" name="Q4" value="5"> Agree</label>
+                        <label><input type="radio" name="Q4" value="6"> Strongly Agree</label>
+
+                        <p><span style="color: black;">5. </span>I am motivated by recognition at work.</p>
+                        <label><input type="radio" name="Q5" value="0"> Strongly Disagree</label>
+                        <label><input type="radio" name="Q5" value="1"> Disagree</label>
+                        <label><input type="radio" name="Q5" value="2"> Slightly Disagree</label>
+                        <label><input type="radio" name="Q5" value="3"> Neither Agree nor Disagree</label>
+                        <label><input type="radio" name="Q5" value="4"> Slightly Agree</label>
+                        <label><input type="radio" name="Q5" value="5"> Agree</label>
+                        <label><input type="radio" name="Q5" value="6"> Strongly Agree</label>
+
+                    </div>
+
+                    <div class="col50 colright">
+                        <p><span style="color: black;">6. </span>Its important to me to work in an environment where no
+                            one day is the same.</p>
+                        <label><input type="radio" name="Q6" value="0"> Strongly Disagree</label>
+                        <label><input type="radio" name="Q6" value="1"> Disagree</label>
+                        <label><input type="radio" name="Q6" value="2"> Slightly Disagree</label>
+                        <label><input type="radio" name="Q6" value="3"> Neither Agree nor Disagree</label>
+                        <label><input type="radio" name="Q6" value="4"> Slightly Agree</label>
+                        <label><input type="radio" name="Q6" value="5"> Agree</label>
+                        <label><input type="radio" name="Q6" value="6"> Strongly Agree</label>
+
+                        <p><span style="color: black;">7. </span>Its important to me to keep up to date with the newest
+                            research of my field.</p>
+                        <label><input type="radio" name="Q7" value="0"> Strongly Disagree</label>
+                        <label><input type="radio" name="Q7" value="1"> Disagree</label>
+                        <label><input type="radio" name="Q7" value="2"> Slightly Disagree</label>
+                        <label><input type="radio" name="Q7" value="3"> Neither Agree nor Disagree</label>
+                        <label><input type="radio" name="Q7" value="4"> Slightly Agree</label>
+                        <label><input type="radio" name="Q7" value="5"> Agree</label>
+                        <label><input type="radio" name="Q7" value="6"> Strongly Agree</label>
+
+                        <p><span style="color: black;">8. </span>It is important that I am able to take on different
+                            kinds of tasks at work.</p>
+                        <label><input type="radio" name="Q8" value="0"> Strongly Disagree</label>
+                        <label><input type="radio" name="Q8" value="1"> Disagree</label>
+                        <label><input type="radio" name="Q8" value="2"> Slightly Disagree</label>
+                        <label><input type="radio" name="Q8" value="3"> Neither Agree nor Disagree</label>
+                        <label><input type="radio" name="Q8" value="4"> Slightly Agree</label>
+                        <label><input type="radio" name="Q8" value="5"> Agree</label>
+                        <label><input type="radio" name="Q8" value="6"> Strongly Agree</label>
+
+                        <p><span style="color: black;">9. </span>I want to support others in their learning.</p>
+                        <label><input type="radio" name="Q9" value="0"> Strongly Disagree</label>
+                        <label><input type="radio" name="Q9" value="1"> Disagree</label>
+                        <label><input type="radio" name="Q9" value="2"> Slightly Disagree</label>
+                        <label><input type="radio" name="Q9" value="3"> Neither Agree nor Disagree</label>
+                        <label><input type="radio" name="Q9" value="4"> Slightly Agree</label>
+                        <label><input type="radio" name="Q9" value="5"> Agree</label>
+                        <label><input type="radio" name="Q9" value="6"> Strongly Agree</label>
+
+                        <p><span style="color: black;">10. </span>Being publicly praised for my work would feel
+                            uncomfortable for me.</p>
+                        <label><input type="radio" name="Q10" value="0"> Strongly Disagree</label>
+                        <label><input type="radio" name="Q10" value="1"> Disagree</label>
+                        <label><input type="radio" name="Q10" value="2"> Slightly Disagree</label>
+                        <label><input type="radio" name="Q10" value="3"> Neither Agree nor Disagree</label>
+                        <label><input type="radio" name="Q10" value="4"> Slightly Agree</label>
+                        <label><input type="radio" name="Q10" value="5"> Agree</label>
+                        <label><input type="radio" name="Q10" value="6"> Strongly Agree</label>
+                    </div>
+                </div>
+
+
+                <div class="wd100">
+                    <button name="submit" type="submit" id="" data-submit="...Sending">Submit</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Contact Section -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h2 class="m-b-10">Get in Touch with Us</h2>
+
+                            </div>
+                            <div class="col-lg-6 m-b-30">
+                                <address>
+                                    <strong>Headquarters:</strong><br>
+                                    Netaji Subhas University of Technology<br>
+                                    Dwarka Sector 3, Delhi<br>
+                                </address>
+                                <strong>Phone:</strong> (+91) 8587093204
+                                <br>
+                                <strong>Email:</strong> mindhunt.care@gmail.com
+                            </div>
+                            <div class="col-lg-6 m-b-30">
+                                <address>
+                                    <strong>Headquarters:</strong><br>
+                                    Indira Gandhi Delhi Technical University for Women<br>
+                                    St. Kashmeere Gate, Delhi<br>
+                                </address>
+                                <strong>Phone:</strong> (+1) 1234 56789
+                                <br>
+                                <strong>Email:</strong> info@inspiro-media.com
+                            </div>
+                            <div class="col-lg-12 m-b-30">
+                                <h4>We are social</h4>
+                                <div class="social-icons social-icons-light social-icons-colored-hover">
+                                    <ul>
+                                        <li class="social-facebook"><a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        </li>
+                                        <li class="social-twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li class="social-youtube"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                        <li class="social-instagram"><a href="#"><i class="fab fa-instagram"></i></a>
+                                        </li>
+                                        <li class="social-gplus"><a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                        </li>
+                                        <li class="social-linkedin"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-1">
+                        <form class="widget-contact-form"
+                            action="http://www.inspirothemes.com/polo/include/contact-form.php" role="form"
+                            method="post">
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="name">Name</label>
+                                    <input type="text" aria-required="true" name="widget-contact-form-name"
+                                        class="form-control required name" placeholder="Enter your Name">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="email">Email</label>
+                                    <input type="email" aria-required="true" name="widget-contact-form-email"
+                                        class="form-control required email" placeholder="Enter your Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea type="text" name="widget-contact-form-message" rows="8"
+                                    class="form-control required" placeholder="Enter your Message"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-light" type="submit" id="form-submit"><i
+                                        class="fa fa-paper-plane"></i>&nbsp;Send message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <a id="scrollTop"><i class="icon-chevron-up1"></i><i class="icon-chevron-up1"></i></a>
+
+        <script src="{% static 'js/jquery.js' %}"></script>
+        <script src="{% static 'js/plugins.js' %}"></script>
+
+        <script src="{% static 'js/functions.js' %}"></script>
+
+        <script src="{% static 'js/plugins/components/particles.js' %}"></script>
+        <script src="{% static 'js/plugins/components/particles-animation.js' %}"></script>
+
+    </div>
+</body>
+
+</html>
